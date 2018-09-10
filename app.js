@@ -1,15 +1,10 @@
-// middle ware - any code between request and response it called middlw ware
+// query string not update this.. later update it...
 
 var express = require('express');
 var app = express();
 
 app.set('view engine','ejs');
-// use middleware
-    // this is without express
-// app.use('/assets',function(req,res,next){
-//     console.log(req.url);
-//     next();
-// });
+
 app.use('/assets',express.static('stuff'));
 
 app.get('/',function(req,res){
