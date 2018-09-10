@@ -1,7 +1,7 @@
-// module exports
+// install template engine...  choosing ejs.
+// install ejs
 var express = require('express');
 
-// access to defferent method and attributes
 var app = express();
 
 app.get('/',function(req,res){
