@@ -15,6 +15,11 @@ app.get('/contact',function(req,res){
     res.sendFile(__dirname+'/contact.html');
 });
 app.get('/profile/:id',function(req,res){
-    res.send('loggin profile with user id :'+req.params.id);
+    // edit this
+            // res.send('loggin profile with user id :'+req.params.id);
+    // res.render('profile');
+            // edit this to add params... create object
+    res.render('profile',{person: req.params.id});
+    // added this to profile.ejs file
 });
 app.listen(3000);
