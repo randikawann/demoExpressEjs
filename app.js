@@ -1,7 +1,16 @@
+// middle ware - any code between request and response it called middlw ware
+
 var express = require('express');
 var app = express();
 
 app.set('view engine','ejs');
+// use middleware
+    // this is without express
+// app.use('/assets',function(req,res,next){
+//     console.log(req.url);
+//     next();
+// });
+app.use('/assets',express.static('assets'));
 
 app.get('/',function(req,res){
     res.render('index');
