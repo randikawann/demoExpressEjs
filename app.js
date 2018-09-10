@@ -10,7 +10,7 @@ app.set('view engine','ejs');
 //     console.log(req.url);
 //     next();
 // });
-app.use('/assets',express.static('assets'));
+app.use('/assets',express.static('stuff'));
 
 app.get('/',function(req,res){
     res.render('index');
