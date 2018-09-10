@@ -6,10 +6,19 @@
 <body>
     <h1>this is profile page</h1>
     
-    <p>ejs profile page welcome <%= person %></p>
+    <h1>ejs profile page welcome <%= person %></h1>
 
     <p><strong>Name :</strong> <%= data.name %></p>
     <p><strong>Age :</strong> <%= data.age %></p>
+
+    <h1>Hobies</h1>
+
+    
+    <ul>
+        <% data.hobbies.forEach(function(item){ %>
+            <li><%= item %></li>
+        <% }); %>
+    </ul>
 
 </body>
 </html>

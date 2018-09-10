@@ -10,7 +10,9 @@ app.get('/contact',function(req,res){
     res.sendFile(__dirname+'/contact.html');
 });
 app.get('/profile/:id',function(req,res){
-    var data  = {name:'randika', age : '24'};
+    var data  = {name:'randika', age : '24', hobbies : ['eating','fighting','fishing']};
     res.render('profile',{person: req.params.id, data : data});
 });
-app.listen(3000);
+app.listen(3000,function(){
+    console.log("app is listening on port 3000");
+});
