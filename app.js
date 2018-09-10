@@ -1,0 +1,19 @@
+// module exports
+var express = require('express');
+
+// access to defferent method and attributes
+var app = express();
+
+// http methods -> GET, POST, DELETE, PUT
+// respoding to requests
+/*
+    app.get('route',fn);
+    app.post('route',fn);
+    app.delete('route',fn);
+*/
+app.get('/',function(req,res){
+    res.send('this is test express');
+});
+app.listen(3000);
+// using defualt finding url
+// app.listen(3000,'127.0.0.1');
