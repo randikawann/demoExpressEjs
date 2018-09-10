@@ -14,6 +14,9 @@ var app = express();
 app.get('/',function(req,res){
     res.send('this is test express');
 });
+app.get('/contact',function(req,res){
+    res.send('this is contact page');
+});
 app.listen(3000);
 // using defualt finding url
 // app.listen(3000,'127.0.0.1');
