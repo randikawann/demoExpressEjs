@@ -15,7 +15,10 @@ app.get('/',function(req,res){
     res.send('this is test express');
 });
 app.get('/contact',function(req,res){
-    res.send('this is contact page');
+    res.send('this is contact pageefsd');
+});
+app.get('/profile/:id',function(req,res){
+    res.send('loggin profile with user id :'+req.params.id);
 });
 app.listen(3000);
 // using defualt finding url
